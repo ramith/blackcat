@@ -42,3 +42,4 @@ clean:
 run: all
 	@echo "Starting $(TARGET)..."
 	./$(TARGET)
+  
