@@ -1,7 +1,7 @@
 # File: Makefile
 
 GO             := go
-MIN_GO_VERSION := 1.24
+MIN_GO_VERSION := 1.21
 
 MAIN          := main.go
 TARGET        := blackcat
@@ -12,7 +12,7 @@ PLUGINS_SO    := $(PLUGINS_GO:.go=.so)
 
 .PHONY: all check_go_version blackcat plugins clean run
 
-all: check_go_version blackcat plugins
+all: check_go_version plugins blackcat
 
 check_go_version:
 	@echo "Checking Go version >= $(MIN_GO_VERSION)..."
@@ -42,4 +42,3 @@ clean:
 run: all
 	@echo "Starting $(TARGET)..."
 	./$(TARGET)
-  
