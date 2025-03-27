@@ -1,0 +1,2 @@
+plugin_path: ../plugins/sampleplugin/plugin.so
+handler_symbol: Handler
